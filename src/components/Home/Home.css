@@ -1,0 +1,210 @@
+:root {
+	---colour-1: #fc466b;
+	---colour-2: #46b2fc;
+	---colour-3: #fcc046;
+	---colour-4: #fc46fb;
+	---colour-5: #46a5fc;
+}
+
+.home {
+	height: 110vh;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+}
+.FrontText {
+	color: hsl(0, 0%, 28%);
+	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 7px;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 8rem;
+	color: white;
+	transform: translate(-50%, -50%);
+}
+
+.FrontText span {
+	transition: 0.5s ease-out;
+}
+.FrontText:hover span:nth-child(1) {
+	margin-right: 5px;
+}
+.FrontText:hover span:nth-child(1):after {
+	content: "";
+}
+.FrontText:hover span:nth-child(2) {
+	margin-left: 30px;
+}
+.FrontText:hover span {
+	color: #fff;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+img {
+	height: 36rem;
+	width: 84rem;
+}
+.centerText {
+	text-align: center;
+	/* font-size: 10px; */
+}
+
+.ml4 {
+	position: relative;
+	font-weight: 900;
+	font-size: 3.5em;
+	color: black;
+}
+.ml4 .letters {
+	position: absolute;
+	margin: auto;
+	left: 1;
+	top: 0;
+	right: 0;
+	opacity: 0;
+}
+/* ______textAnimi______ */
+section {
+	height: 100vh;
+	width: 100%;
+	background-color: white;
+	color: black;
+	display: grid;
+	place-items: center;
+	align-content: center;
+}
+section .paragrap {
+	font-size: 6rem;
+	font-weight: bolder;
+	text-align: center;
+	font-family: "Architects Daughter", cursive;
+	font-family: "Inter", sans-serif;
+	font-family: "PT Sans", sans-serif;
+	font-family: "Questrial", sans-serif;
+	font-family: "Raleway", sans-serif;
+	color: transparent;
+	text-shadow: 0 0 0 #333333;
+	color: #000000;
+}
+.hidden {
+	opacity: 0;
+	filter: blur(8px);
+	transform: translateX(-100%);
+	transition: all 2s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+section .paragrap1 {
+	font-size: 3rem;
+	text-align: center;
+	font-family: "Architects Daughter", cursive;
+	font-family: "Inter", sans-serif;
+	font-family: "PT Sans", sans-serif;
+	font-family: "Questrial", sans-serif;
+	font-family: "Raleway", sans-serif;
+}
+.logos {
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(205, 77, 77);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logos .logo .imgIcons {
+	height: 10rem;
+	width: 10rem;
+}
+.logo:nth-child(2) {
+	transition-delay: 200ms;
+}
+.logo:nth-child(4) {
+	transition-delay: 400ms;
+}
+.logo:nth-child(6) {
+	transition-delay: 600ms;
+}
+.logo:nth-child(8) {
+	transition-delay: 800ms;
+}
+.logo:nth-child(10) {
+	transition-delay: 1000ms;
+}
+.wrapper {
+	position: fixed;
+	top: 126%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.link_wrapper {
+	position: relative;
+}
+
+.anchortag {
+	display: block;
+	width: 300px;
+	height: 70px;
+	line-height: 50px;
+	text-decoration: none;
+	background: #9dec8b;
+	text-align: center;
+	color: #c83636;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 3px solid #333;
+	transition: all 0.35s;
+	text-align: center;
+	font-family: "Architects Daughter", cursive;
+	font-family: "Inter", sans-serif;
+	font-family: "PT Sans", sans-serif;
+	font-family: "Questrial", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-size: 40px;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	border: 3px solid transparent;
+	position: absolute;
+	transform: rotate(45deg);
+	right: 0;
+	top: 0;
+	z-index: -1;
+	transition: all 0.35s;
+}
+
+.icon svg {
+	width: 30px;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: calc(50% - 15px);
+	transform: rotate(-45deg);
+	fill: #2ecc71;
+	transition: all 0.35s;
+}
+
+.anchortag:hover {
+	width: 300px;
+	border: 3px solid #2ecc71;
+	background: transparent;
+	color: #ffffff;
+}
+
+.anchortag:hover + .icon {
+	border: 3px solid #2ecc71;
+	right: -25%;
+}

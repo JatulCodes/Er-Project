@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.Mainnav {
+	position: relative;
+	width: 100%;
+}
+.logo {
+	font-size: 40px;
+	color: aliceblue;
+}
+.navbar {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	height: 70px;
+	color: aliceblue;
+	padding: 0 25px 0 25px;
+	background: #000000; /* fallback for old browsers */
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navLinks {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	width: 75%;
+}
+
+.Mainnav .navbar .NavButton {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	padding: 10px 20px;
+	margin: 0 10px;
+	cursor: pointer;
+	font-family: "Architects Daughter", cursive;
+	font-family: "Inter", sans-serif;
+	font-family: "PT Sans", sans-serif;
+	font-family: "Questrial", sans-serif;
+	font-family: "Raleway", sans-serif;
+}
+
+.Mainnav .navbar .sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.Mainnav .navbar .sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.Mainnav .navbar .sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.Mainnav .navbar.sidebar a:hover {
+	color: #f1f1f1;
+}
+.Mainnav .navbar .main .cartIcon {
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+}
+
+.Mainnav .navbar .main .cartIcon:hover {
+	background-color: #444;
+}
+
+.Mainnav .navbar .NavButton .main {
+	transition: margin-left 0.5s;
+}

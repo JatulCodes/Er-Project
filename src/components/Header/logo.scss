@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cinzel:wght@700&family=Inter:wght@900&family=PT+Sans&family=Questrial&family=Raleway:wght@200;900&display=swap");
+
+.title {
+	position: relative;
+	color: rgb(255, 255, 255);
+	padding: 20px 50px;
+
+	// font-family: "Raleway", sans-serif;
+	font-size: 28px;
+}
+
+.title:before {
+	background-color: antiquewhite;
+
+	color: rgb(0, 0, 0);
+	content: "SQUAD EASY";
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 50px;
+	-webkit-clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+	animation: slide 4s 1s linear infinite;
+}
+
+@keyframes slide {
+	50% {
+		-webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%);
+	}
+}
+
+/* Unnecessary code */
